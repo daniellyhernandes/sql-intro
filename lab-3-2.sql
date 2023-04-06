@@ -7,7 +7,7 @@
 -- | Arizona Diamondbacks          | 76.9             |
 -- | Atlanta Braves                | 83.75            |
 -- | Baltimore Orioles             | 70.2             |
--- | Boston Red Sox                | 86.55            |
+-- | Boston Red Sox                | 86.55            |c
 -- | Chicago Cubs                  | 79.65            |
 -- | Chicago White Sox             | 77.0             |
 -- | Cincinnati Reds               | 73.6             |
@@ -39,4 +39,8 @@
 -- | Washington Nationals          | 78.0             |
 -- +-------------------------------+------------------+
 
-
+SELECT name, AVG (wins)
+FROM teams
+WHERE year > 2000
+GROUP BY name
+;
